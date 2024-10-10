@@ -1,0 +1,67 @@
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 3rem 2rem; /* Espaciado superior e inferior */
+  text-align: center; /* Centrar texto */
+  font-family: 'Calibri', sans-serif; /* Tipografía */
+}
+
+.footer-col {
+  margin-bottom: 2rem; /* Espaciado inferior para las columnas */
+}
+
+.footer h5 {
+  font-size: 1.5rem; /* Tamaño de fuente para los encabezados */
+  margin-bottom: 1rem; /* Espaciado inferior del encabezado */
+  font-weight: 700; /* Negrita */
+}
+
+.contact-list {
+  list-style: none; /* Sin viñetas */
+  padding: 0; /* Sin padding */
+}
+
+.contact-list li {
+  margin-bottom: 0.625rem; /* Espaciado entre elementos de la lista */
+}
+
+.contact-list li span {
+  margin-left: 0.625rem; /* Margen izquierdo para el texto */
+}
+
+.rights-text {
+  font-size: 0.875rem; /* Tamaño de fuente para derechos reservados */
+  margin-top: 1rem; /* Espaciado superior */
+  font-family: 'Calibri', sans-serif; /* Tipografía */
+  color: rgba(255, 255, 255, 0.7); /* Color blanco con opacidad para un efecto sutil */
+  text-align: center; /* Centrar texto */
+  line-height: 1.5; /* Espaciado entre líneas */
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .rights-text {
+    font-size: 0.75rem; /* Tamaño ajustado */
+  }
+}
+
+@media (max-width: 480px) {
+  .rights-text {
+    font-size: 0.65rem; /* Tamaño aún más pequeño */
+  }
+}
+
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 1.5rem 0.5rem; /* Ajustado para dispositivos más pequeños */
+  }
+
+  .footer h5 {
+    font-size: 1rem; /* Tamaño de fuente aún más pequeño */
+  }
+
+  .rights-text {
+    font-size: 0.65rem; /* Ajustado */
+  }
+}

@@ -1,0 +1,124 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url('../../img/Valoracion.jpg');
+    background-size: 25%; /* Ajusta el tamaño de la imagen, por ejemplo al 25% */
+    background-repeat: repeat; /* La imagen se repetirá */
+    background-position: center; 
+    z-index: 1000; 
+    height: 25vh; /* Mantén la altura para pantallas más grandes */
+    border-bottom: 0.375rem solid #000000; /* Borde inferior */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos */
+    align-items: center;
+    padding: 1rem 2rem; /* Espaciado interno */
+    max-width: 1500px; /* Limita el ancho máximo */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.navbar-logo img {
+    height: 3.125rem; /* Tamaño del logo */
+}
+
+.navbar-text-container {
+    padding: 0.625rem 1.25rem; /* Espaciado para texto */
+}
+
+.navbar-text {
+    color: white;
+    font-size: 1.125rem; /* Tamaño de fuente */
+    font-weight: bold;
+    text-align: right;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1.25rem; /* Espaciado entre enlaces */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    display: inline; /* Alinea los elementos en línea */
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.625rem 1rem; /* Espaciado para enlaces */
+    transition: background-color 0.3s;
+}
+
+.navbar-links a:hover {
+    background-color: rgba(85, 85, 85, 0.7); /* Color de fondo al pasar el cursor */
+    border-radius: 0.3125rem; /* Bordes redondeados */
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .navbar {
+        height: 15vh; /* Altura ajustada para pantallas de portátiles */
+    }
+
+    .navbar-container {
+        padding: 0.5rem 1rem; /* Espaciado ajustado */
+    }
+
+    .navbar-logo img {
+        height: 2.5rem; /* Tamaño del logo ajustado */
+    }
+
+    .navbar-text {
+        font-size: 1rem; /* Tamaño de texto ajustado */
+    }
+
+    .navbar-links a {
+        padding: 0.5rem 0.75rem; /* Espaciado de enlaces ajustado */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: 12vh; /* Altura ajustada para pantallas más pequeñas */
+    }
+
+    .navbar-container {
+        padding: 0.5rem; /* Espaciado ajustado */
+    }
+
+    .navbar-logo img {
+        height: 2.5rem; /* Tamaño del logo ajustado */
+    }
+
+    .navbar-text {
+        font-size: 0.875rem; /* Tamaño de texto ajustado */
+    }
+
+    .navbar-links a {
+        padding: 0.5rem; /* Espaciado de enlaces ajustado */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        height: 10vh; /* Altura ajustada para pantallas muy pequeñas */
+    }
+
+    .navbar-logo img {
+        height: 2rem; /* Tamaño del logo ajustado */
+    }
+
+    .navbar-text {
+        font-size: 0.875rem; /* Tamaño de texto ajustado */
+    }
+
+    .navbar-links a {
+        padding: 0.5rem; /* Espaciado de enlaces ajustado */
+    }
+}
